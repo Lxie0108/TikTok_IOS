@@ -62,6 +62,8 @@ class PostViewController: UIViewController {
     
     var player: AVPlayer?
     
+    private var playerFinshedObserver: NSObjectProtocol?
+    
     
     // Init
     init(model: PostModel){
@@ -124,6 +126,18 @@ class PostViewController: UIViewController {
         view.layer.addSublayer(playerLayer)
         player?.volume = 0
         player?.play()
+        
+        guard let player = player else{
+            return
+        }
+        playerFinshedObserver = NotificationCenter.default.addObserver(
+            forName: .AVPlayerItemDidPlayToEndTime,
+            object: player.currentItem,
+            queue: .main,
+            using: { _ in
+                player.seek(to: .zero)
+                player.play()
+            })
     }
     
     @objc func didTapProfileButton(){
