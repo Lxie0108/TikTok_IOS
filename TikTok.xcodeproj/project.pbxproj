@@ -16,6 +16,13 @@
 		3DB9839926C78A49007B273D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB9839826C78A49007B273D /* User.swift */; };
 		3DB9839B26C86D93007B273D /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB9839A26C86D93007B273D /* CommentTableViewCell.swift */; };
 		3DB9839D26C890A6007B273D /* mockVideo.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = 3DB9839C26C890A6007B273D /* mockVideo.MP4 */; };
+		3DB9839F26C8C4A2007B273D /* ExploreSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB9839E26C8C4A2007B273D /* ExploreSection.swift */; };
+		3DB983A126C8C503007B273D /* ExploreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB983A026C8C503007B273D /* ExploreCell.swift */; };
+		3DB983A326C8C547007B273D /* ExploreSectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB983A226C8C547007B273D /* ExploreSectionType.swift */; };
+		3DB983A526C8C74D007B273D /* ExploreBannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB983A426C8C74D007B273D /* ExploreBannerViewModel.swift */; };
+		3DB983A726C8C76F007B273D /* ExplorePostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB983A626C8C76F007B273D /* ExplorePostViewModel.swift */; };
+		3DB983A926C8C788007B273D /* ExploreHashtagViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB983A826C8C788007B273D /* ExploreHashtagViewModel.swift */; };
+		3DB983AB26C8C7AC007B273D /* ExploreUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB983AA26C8C7AC007B273D /* ExploreUserViewModel.swift */; };
 		3DCA2CCD26A9F75A003E7C90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA2CCC26A9F75A003E7C90 /* AppDelegate.swift */; };
 		3DCA2CCF26A9F75A003E7C90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA2CCE26A9F75A003E7C90 /* SceneDelegate.swift */; };
 		3DCA2CD126A9F75A003E7C90 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA2CD026A9F75A003E7C90 /* HomeViewController.swift */; };
@@ -48,6 +55,13 @@
 		3DB9839826C78A49007B273D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3DB9839A26C86D93007B273D /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
 		3DB9839C26C890A6007B273D /* mockVideo.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = mockVideo.MP4; sourceTree = "<group>"; };
+		3DB9839E26C8C4A2007B273D /* ExploreSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreSection.swift; sourceTree = "<group>"; };
+		3DB983A026C8C503007B273D /* ExploreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCell.swift; sourceTree = "<group>"; };
+		3DB983A226C8C547007B273D /* ExploreSectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreSectionType.swift; sourceTree = "<group>"; };
+		3DB983A426C8C74D007B273D /* ExploreBannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreBannerViewModel.swift; sourceTree = "<group>"; };
+		3DB983A626C8C76F007B273D /* ExplorePostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorePostViewModel.swift; sourceTree = "<group>"; };
+		3DB983A826C8C788007B273D /* ExploreHashtagViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreHashtagViewModel.swift; sourceTree = "<group>"; };
+		3DB983AA26C8C7AC007B273D /* ExploreUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreUserViewModel.swift; sourceTree = "<group>"; };
 		3DCA2CC926A9F75A003E7C90 /* TikTok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TikTok.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DCA2CCC26A9F75A003E7C90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DCA2CCE26A9F75A003E7C90 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -170,6 +184,9 @@
 				3D70AFE326B09FA400233832 /* PostModel.swift */,
 				3DB9839626C78A14007B273D /* PostComment.swift */,
 				3DB9839826C78A49007B273D /* User.swift */,
+				3DB9839E26C8C4A2007B273D /* ExploreSection.swift */,
+				3DB983A026C8C503007B273D /* ExploreCell.swift */,
+				3DB983A226C8C547007B273D /* ExploreSectionType.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -177,6 +194,10 @@
 		3DCA2CE526ACAB46003E7C90 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				3DB983A426C8C74D007B273D /* ExploreBannerViewModel.swift */,
+				3DB983A626C8C76F007B273D /* ExplorePostViewModel.swift */,
+				3DB983A826C8C788007B273D /* ExploreHashtagViewModel.swift */,
+				3DB983AA26C8C7AC007B273D /* ExploreUserViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -370,13 +391,19 @@
 				3DCA2D0926ACB629003E7C90 /* HapticsManager.swift in Sources */,
 				3D70AFE226B077AC00233832 /* Extensions.swift in Sources */,
 				3DCA2CEA26ACACD3003E7C90 /* ExploreViewController.swift in Sources */,
+				3DB9839F26C8C4A2007B273D /* ExploreSection.swift in Sources */,
 				3DB9839B26C86D93007B273D /* CommentTableViewCell.swift in Sources */,
 				3DCA2CF926ACAD90003E7C90 /* SettingViewController.swift in Sources */,
 				3DB9839526C75311007B273D /* PostViewController.swift in Sources */,
+				3DB983A926C8C788007B273D /* ExploreHashtagViewModel.swift in Sources */,
 				3DCA2CF226ACAD33003E7C90 /* UserListViewController.swift in Sources */,
 				3DCA2CEC26ACACF6003E7C90 /* CameraViewController.swift in Sources */,
 				3DCA2CFB26ACADCC003E7C90 /* TabBarViewController.swift in Sources */,
+				3DB983A726C8C76F007B273D /* ExplorePostViewModel.swift in Sources */,
+				3DB983A126C8C503007B273D /* ExploreCell.swift in Sources */,
 				3DB9839226C74EE2007B273D /* CommentsViewController.swift in Sources */,
+				3DB983A526C8C74D007B273D /* ExploreBannerViewModel.swift in Sources */,
+				3DB983AB26C8C7AC007B273D /* ExploreUserViewModel.swift in Sources */,
 				3DCA2CEE26ACAD0B003E7C90 /* NotificationViewController.swift in Sources */,
 				3DB9839926C78A49007B273D /* User.swift in Sources */,
 				3DCA2CF626ACAD6D003E7C90 /* SignUpViewController.swift in Sources */,
@@ -390,6 +417,7 @@
 				3DCA2CCD26A9F75A003E7C90 /* AppDelegate.swift in Sources */,
 				3DCA2D0526ACAED6003E7C90 /* DatabaseManger.swift in Sources */,
 				3DCA2CCF26A9F75A003E7C90 /* SceneDelegate.swift in Sources */,
+				3DB983A326C8C547007B273D /* ExploreSectionType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
