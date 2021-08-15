@@ -5,6 +5,7 @@
 //  Created by Ling Xie on 7/24/21.
 //
 
+import AVFoundation
 import UIKit
 
 protocol PostViewControllerDelegate: AnyObject{
@@ -59,6 +60,8 @@ class PostViewController: UIViewController {
         return label
     }()
     
+    var player: AVPlayer?
+    
     
     // Init
     init(model: PostModel){
@@ -74,6 +77,7 @@ class PostViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        configureVideo()
         let colors: [UIColor] = [.green, .black, .blue, .systemPink]
         view.backgroundColor = colors.randomElement()
         
@@ -105,6 +109,21 @@ class PostViewController: UIViewController {
                                       width: size,
                                       height:size)
         profileButton.layer.cornerRadius = size/2
+    }
+    
+    private func configureVideo(){
+        guard let path = Bundle.main.path(forResource: "mockVideo", ofType: "MP4") else{
+            return
+        }
+        let url = URL(fileURLWithPath: path)
+        player = AVPlayer(url: url)
+        
+        let playerLayer = AVPlayerLayer(player: player)
+        playerLayer.frame = view.bounds
+        playerLayer.videoGravity = .resizeAspectFill
+        view.layer.addSublayer(playerLayer)
+        player?.volume = 0
+        player?.play()
     }
     
     @objc func didTapProfileButton(){
