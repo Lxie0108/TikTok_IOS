@@ -11,6 +11,6 @@ import UIKit
 
 struct ExplorePostViewModel{
     let thumbnailImage: UIImage?
-    let title: String
+    let caption: String
     let handler: (() -> Void)
 }
