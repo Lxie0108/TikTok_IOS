@@ -10,7 +10,7 @@ import Foundation
 enum ExploreCell{
     case banner(viewModel: ExploreBannerViewModel)
     case post(viewModel: ExplorePostViewModel)
-    case hashtag(viewModel: ExploreHashtageViewModel)
+    case hashtag(viewModel: ExploreHashtagViewModel)
     case user(viewModel: ExploreUserViewModel)
 }
 

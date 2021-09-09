@@ -28,7 +28,7 @@
 		3DB983B326E7C2ED007B273D /* ExplorePostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB983B226E7C2ED007B273D /* ExplorePostCollectionViewCell.swift */; };
 		3DB983B526E7C302007B273D /* ExploreUserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB983B426E7C302007B273D /* ExploreUserCollectionViewCell.swift */; };
 		3DB983B726E7C311007B273D /* ExploreHashtagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB983B626E7C311007B273D /* ExploreHashtagCollectionViewCell.swift */; };
-		3DB983B926E90F57007B273D /* explore.json in Resources */ = {isa = PBXBuildFile; fileRef = 3DB983B826E90F57007B273D /* explore.json */; };
+		3DB983BD26E94E80007B273D /* explore.json in Resources */ = {isa = PBXBuildFile; fileRef = 3DB983BC26E94E80007B273D /* explore.json */; };
 		3DCA2CCD26A9F75A003E7C90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA2CCC26A9F75A003E7C90 /* AppDelegate.swift */; };
 		3DCA2CCF26A9F75A003E7C90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA2CCE26A9F75A003E7C90 /* SceneDelegate.swift */; };
 		3DCA2CD126A9F75A003E7C90 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA2CD026A9F75A003E7C90 /* HomeViewController.swift */; };
@@ -73,7 +73,7 @@
 		3DB983B226E7C2ED007B273D /* ExplorePostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorePostCollectionViewCell.swift; sourceTree = "<group>"; };
 		3DB983B426E7C302007B273D /* ExploreUserCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreUserCollectionViewCell.swift; sourceTree = "<group>"; };
 		3DB983B626E7C311007B273D /* ExploreHashtagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreHashtagCollectionViewCell.swift; sourceTree = "<group>"; };
-		3DB983B826E90F57007B273D /* explore.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = explore.json; sourceTree = "<group>"; };
+		3DB983BC26E94E80007B273D /* explore.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = explore.json; sourceTree = "<group>"; };
 		3DCA2CC926A9F75A003E7C90 /* TikTok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TikTok.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DCA2CCC26A9F75A003E7C90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DCA2CCE26A9F75A003E7C90 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -162,7 +162,7 @@
 		3DCA2CE026ACAAD0003E7C90 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				3DB983B826E90F57007B273D /* explore.json */,
+				3DB983BC26E94E80007B273D /* explore.json */,
 				3DB9839C26C890A6007B273D /* mockVideo.MP4 */,
 				3D70AFDD26AD2C3A00233832 /* GoogleService-Info.plist */,
 				3DCA2CCC26A9F75A003E7C90 /* AppDelegate.swift */,
@@ -333,7 +333,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DB983B926E90F57007B273D /* explore.json in Resources */,
+				3DB983BD26E94E80007B273D /* explore.json in Resources */,
 				3DCA2CD926A9F75C003E7C90 /* LaunchScreen.storyboard in Resources */,
 				3DB9839D26C890A6007B273D /* mockVideo.MP4 in Resources */,
 				3DCA2CD626A9F75C003E7C90 /* Assets.xcassets in Resources */,

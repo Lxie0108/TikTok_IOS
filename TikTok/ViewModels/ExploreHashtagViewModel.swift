@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 
-struct ExploreHashtageViewModel{
+struct ExploreHashtagViewModel{
     let text: String
     let icon: UIImage?
     let count: Int

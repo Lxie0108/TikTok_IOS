@@ -50,7 +50,7 @@ class ExploreHashtagCollectionViewCell: UICollectionViewCell {
         iconImageView.image = nil
     }
     
-    func configure(with viewModel: ExploreHashtageViewModel){
+    func configure(with viewModel: ExploreHashtagViewModel){
         hashtagLabel.text = viewModel.text
         iconImageView.image = viewModel.icon
     }
