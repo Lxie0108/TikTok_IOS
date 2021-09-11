@@ -29,6 +29,8 @@
 		3DB983B526E7C302007B273D /* ExploreUserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB983B426E7C302007B273D /* ExploreUserCollectionViewCell.swift */; };
 		3DB983B726E7C311007B273D /* ExploreHashtagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB983B626E7C311007B273D /* ExploreHashtagCollectionViewCell.swift */; };
 		3DB983BD26E94E80007B273D /* explore.json in Resources */ = {isa = PBXBuildFile; fileRef = 3DB983BC26E94E80007B273D /* explore.json */; };
+		3DB983C026EBFD73007B273D /* AuthField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB983BF26EBFD73007B273D /* AuthField.swift */; };
+		3DB983C226EBFD8E007B273D /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB983C126EBFD8E007B273D /* AuthButton.swift */; };
 		3DCA2CCD26A9F75A003E7C90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA2CCC26A9F75A003E7C90 /* AppDelegate.swift */; };
 		3DCA2CCF26A9F75A003E7C90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA2CCE26A9F75A003E7C90 /* SceneDelegate.swift */; };
 		3DCA2CD126A9F75A003E7C90 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA2CD026A9F75A003E7C90 /* HomeViewController.swift */; };
@@ -74,6 +76,8 @@
 		3DB983B426E7C302007B273D /* ExploreUserCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreUserCollectionViewCell.swift; sourceTree = "<group>"; };
 		3DB983B626E7C311007B273D /* ExploreHashtagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreHashtagCollectionViewCell.swift; sourceTree = "<group>"; };
 		3DB983BC26E94E80007B273D /* explore.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = explore.json; sourceTree = "<group>"; };
+		3DB983BF26EBFD73007B273D /* AuthField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthField.swift; sourceTree = "<group>"; };
+		3DB983C126EBFD8E007B273D /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
 		3DCA2CC926A9F75A003E7C90 /* TikTok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TikTok.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DCA2CCC26A9F75A003E7C90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DCA2CCE26A9F75A003E7C90 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,7 +90,7 @@
 		3DCA2CED26ACAD0B003E7C90 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		3DCA2CEF26ACAD20003E7C90 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		3DCA2CF126ACAD33003E7C90 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
-		3DCA2CF326ACAD5A003E7C90 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = TikTok/Controllers/Core/SignInViewController.swift; sourceTree = SOURCE_ROOT; };
+		3DCA2CF326ACAD5A003E7C90 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = TikTok/Controllers/Other/Authentication/SignInViewController.swift; sourceTree = SOURCE_ROOT; };
 		3DCA2CF526ACAD6D003E7C90 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		3DCA2CF826ACAD90003E7C90 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		3DCA2CFA26ACADCC003E7C90 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +129,17 @@
 				721C63AA1A7A2A9D25FB6370 /* Pods-TikTok.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		3DB983BE26EBF8BC007B273D /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				3DCA2CF526ACAD6D003E7C90 /* SignUpViewController.swift */,
+				3DCA2CF326ACAD5A003E7C90 /* SignInViewController.swift */,
+				3DB983BF26EBFD73007B273D /* AuthField.swift */,
+				3DB983C126EBFD8E007B273D /* AuthButton.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		3DCA2CC026A9F75A003E7C90 = {
@@ -243,9 +258,8 @@
 		3DCA2CE826ACAC64003E7C90 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				3DB983BE26EBF8BC007B273D /* Authentication */,
 				3DCA2CF126ACAD33003E7C90 /* UserListViewController.swift */,
-				3DCA2CF326ACAD5A003E7C90 /* SignInViewController.swift */,
-				3DCA2CF526ACAD6D003E7C90 /* SignUpViewController.swift */,
 				3DCA2CF826ACAD90003E7C90 /* SettingViewController.swift */,
 				3DB9839126C74EE2007B273D /* CommentsViewController.swift */,
 				3DB9839426C75311007B273D /* PostViewController.swift */,
@@ -407,6 +421,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DB983C226EBFD8E007B273D /* AuthButton.swift in Sources */,
+				3DB983C026EBFD73007B273D /* AuthField.swift in Sources */,
 				3DCA2D0926ACB629003E7C90 /* HapticsManager.swift in Sources */,
 				3DB983B726E7C311007B273D /* ExploreHashtagCollectionViewCell.swift in Sources */,
 				3D70AFE226B077AC00233832 /* Extensions.swift in Sources */,

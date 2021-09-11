@@ -1,5 +1,5 @@
 //
-//  SignInViewController.swift
+//  SignUpViewController.swift
 //  TikTok
 //
 //  Created by Ling Xie on 7/24/21.
@@ -7,11 +7,12 @@
 
 import UIKit
 
-class SignInViewController: UIViewController {
+class SignUpViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        title = "SIGN UP"
+        view.backgroundColor = .systemBackground
         // Do any additional setup after loading the view.
     }
     
