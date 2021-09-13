@@ -12,11 +12,13 @@ class AuthField: UITextField {
     enum FieldType {
         case email
         case password
+        case username
         
         var title: String {
             switch self {
             case .email: return "Email Address"
             case .password: return "Password"
+            case .username: return "Username"
             }
         }
     }
@@ -34,6 +36,7 @@ class AuthField: UITextField {
     }
     
     private func configureUI(){
+        autocapitalizationType = .none
         backgroundColor = .secondarySystemBackground
         layer.cornerRadius = 8
         layer.masksToBounds = true
