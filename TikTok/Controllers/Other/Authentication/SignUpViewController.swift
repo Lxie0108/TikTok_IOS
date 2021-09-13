@@ -79,27 +79,6 @@ class SignUpViewController: UIViewController,  UITextFieldDelegate {
         termsButton.addTarget(self, action: #selector(didTapTerms), for: .touchUpInside)
     }
     
-    @objc func didTapSignIn(){
-        didTapKeyboardDone()
-        guard let email = emailField.text,
-              let password = passwordField.text,
-              !email.trimmingCharacters(in: .whitespaces).isEmpty,
-              !password.trimmingCharacters(in: .whitespaces).isEmpty,
-              password.count >= 6 else {
-
-            let alert = UIAlertController(title: "Error", message: "Please enter a valid email and password to sign in.", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
-            present(alert, animated: true)
-            return
-        }
-        
-        AuthManager.shared.signIn(with: email, password: password){ loggedIn in
-            if loggedIn {
-                //dismiss sign in page
-            }
-        }
-    }
-    
     @objc func didTapSignUp(){
         didTapKeyboardDone()
         
@@ -118,8 +97,22 @@ class SignUpViewController: UIViewController,  UITextFieldDelegate {
             present(alert, animated: true)
             return
         }
-        AuthManager.shared.signUp(with: username, emailAddress: email, password: password){ success in
-            
+        AuthManager.shared.signUp(with: username, emailAddress: email, password: password) { [weak self] success in
+            DispatchQueue.main.async {
+                if success {
+                    HapticsManager.shared.vibrate(for: .success)
+                    self?.dismiss(animated: true, completion: nil)
+                } else {
+                    HapticsManager.shared.vibrate(for: .error)
+                    let alert = UIAlertController(
+                        title: "Sign Up Failed",
+                        message: "Something went wrong when trying to register. Pleaes try again.",
+                        preferredStyle: .alert
+                    )
+                    alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
+                    self?.present(alert, animated: true)
+                }
+            }
         }
     }
     
