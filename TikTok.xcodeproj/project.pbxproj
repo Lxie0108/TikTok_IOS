@@ -33,6 +33,7 @@
 		3DB983C226EBFD8E007B273D /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB983C126EBFD8E007B273D /* AuthButton.swift */; };
 		3DB983C426F1A908007B273D /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB983C326F1A908007B273D /* RecordButton.swift */; };
 		3DB983C826F1B190007B273D /* CaptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB983C726F1B190007B273D /* CaptionViewController.swift */; };
+		3DB983CC26F43D19007B273D /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB983CB26F43D19007B273D /* Notification.swift */; };
 		3DCA2CCD26A9F75A003E7C90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA2CCC26A9F75A003E7C90 /* AppDelegate.swift */; };
 		3DCA2CCF26A9F75A003E7C90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA2CCE26A9F75A003E7C90 /* SceneDelegate.swift */; };
 		3DCA2CD126A9F75A003E7C90 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA2CD026A9F75A003E7C90 /* HomeViewController.swift */; };
@@ -82,6 +83,7 @@
 		3DB983C126EBFD8E007B273D /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
 		3DB983C326F1A908007B273D /* RecordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordButton.swift; sourceTree = "<group>"; };
 		3DB983C726F1B190007B273D /* CaptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionViewController.swift; sourceTree = "<group>"; };
+		3DB983CB26F43D19007B273D /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		3DCA2CC926A9F75A003E7C90 /* TikTok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TikTok.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DCA2CCC26A9F75A003E7C90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DCA2CCE26A9F75A003E7C90 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 				3DB9839E26C8C4A2007B273D /* ExploreSection.swift */,
 				3DB983A026C8C503007B273D /* ExploreCell.swift */,
 				3DB983A226C8C547007B273D /* ExploreSectionType.swift */,
+				3DB983CB26F43D19007B273D /* Notification.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -463,6 +466,7 @@
 				3DCA2D0326ACAEC2003E7C90 /* StorageManager.swift in Sources */,
 				3DCA2CCD26A9F75A003E7C90 /* AppDelegate.swift in Sources */,
 				3DB983B126E7C2BD007B273D /* ExploreBannerCollectionViewCell.swift in Sources */,
+				3DB983CC26F43D19007B273D /* Notification.swift in Sources */,
 				3DCA2D0526ACAED6003E7C90 /* DatabaseManger.swift in Sources */,
 				3DCA2CCF26A9F75A003E7C90 /* SceneDelegate.swift in Sources */,
 				3DB983A326C8C547007B273D /* ExploreSectionType.swift in Sources */,
